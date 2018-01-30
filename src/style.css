@@ -1,0 +1,119 @@
+*{
+  box-sizing : border-box;
+}
+html, body {
+  height:100%;
+  position: relative;
+}
+/*518263*/
+
+.main-container {
+  text-align: center;
+}
+
+h1{
+  font-weight: normal;
+}
+
+.header,
+.footer
+{
+  background-color: #1d7373;
+  padding: 20px;
+  color: white;
+}
+
+.footer{
+  width : 100%;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.content {
+  font-size: large;
+  min-height : 645px;
+  padding-top : 50px;
+}
+
+/* ================== TEXT ===================*/
+.text-big{
+  font-size : 60px;
+}
+/* ================== BUTTON ===================*/
+.button{
+  margin-top:50px;
+  background-color : white;
+  color: black;
+  font-size : 25px;
+  padding : 15px;
+  border-radius : 5px;
+  cursor: pointer;
+  border: 2px solid #5ecccc;
+}
+.button:hover{
+  background-color : #5ecccc;
+  color: white;
+}
+
+/* ================== POPIN ===================*/
+.popin-container{
+  position: absolute;
+  width : 80%;
+  height: 650px;
+  top: 10%;
+  left: 10%;
+  box-shadow: 5px 5px 5px 5px rgba(33,33, 33, .2);
+  padding : 50px;
+  font-size : 35px;
+}
+
+.popin-container.error{
+  background : url(/images/bkg-error.jpg) #fafafa no-repeat center center;
+  border : 2px solid #fa6466;
+}
+
+.popin-container .text-big{
+  margin:25px;
+  display : block;
+}
+
+.popin-content{
+  position:relative;
+}
+
+.popin-container .button{
+  background-color : grey;
+  color: black;
+  position : absolute;
+  border: 2px solid grey;
+  top : 300px;
+  right : 215px;
+  font-size : 17px;
+  padding: 10px;
+}
+.popin-container .button:hover{
+  border :2px solid grey;
+  color: black;
+  background-color : white;
+}
+
+/* ================== SUCCESS ===================*/
+.success img{
+  width : 80px;
+}
+
+
+/* ================== MEDIA QUERIES ===================*/
+@media (max-width: 33.75em){
+  .popin-container{
+    position: absolute;
+    width : 60%;
+    height: 400px;
+    top: 130px;
+    left: 20%;
+  }
+}
+
+
